@@ -4,8 +4,6 @@ import { styled } from 'styled-components';
 
 const StContainer = styled.div`
 display: flex;
-
-
 `
 
 
@@ -20,13 +18,10 @@ border: 1px solid ${(props) => {
   return props.borderColor
   }};
 margin: 20px;
-
 `
 
-
 // 박스의 색을 배열 형태로 선언
-const boxList = ['red', 'blue', 'green']
-
+const boxList = ['red', 'blue', 'green', 'black']
 
 //색을 넣으면 이름을 반환 -> 여러줄의 코드를 한줄로 줄일 수 있다.
 const getBoxName =(color)=>{
