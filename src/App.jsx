@@ -1,5 +1,6 @@
+import TestPage from './components/TestPage';
 import './App.css';
-import { styled } from 'styled-components';
+import styled  from 'styled-components';
 
 
 const StContainer = styled.div`
@@ -27,29 +28,30 @@ const boxList = ['red', 'blue', 'green', 'black']
 const getBoxName =(color)=>{
   switch (color) {
     case 'red' : 
-    return "빨간상자님";
+    return "빨간상자";
 
     case 'blue' : 
-    return "파랑상자님";
+    return "파랑상자";
 
     case 'green' : 
-    return "초록상자님";
+    return "초록상자";
 
     default:
-      return '검정상자님';
+      return '검정상자';
   }
 }
 function App() {
   return (
-    <StContainer>
-    {/* <StBox borderColor='red' > 빨간상자님</StBox> */}
-    {
-      boxList.map((box)=>{
-        return <StBox borderColor={box}>{getBoxName(box)}</StBox>
-        
-      })
-    }
-    </StContainer>
+    // <StContainer>
+    // {/* <StBox borderColor='red' > 빨간상자님</StBox> */}
+    // {
+    //   boxList.map((box)=>{
+    //     return <StBox borderColor={box}>{getBoxName(box)}</StBox>
+    //   })}
+    // </StContainer>
+    <TestPage 
+    title="제목입니다"
+    contents="내용입니다"/>
   );
 }
 // props : 부모 컴-> 자식 컴에서 내려주는 데이터
