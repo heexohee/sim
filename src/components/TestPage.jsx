@@ -10,18 +10,16 @@ function TestPage(props) {
   );
 }
 
-// 해당 컴포넌트 내에서 쓰이는 스타일링
+// 해당 컴포넌트 내에서 쓰이는 스타일링(지역 스타일링)
 const Title = styled.h1`
-  font-family: "Helvetica", "Arial", sans-serif;
-  line-height: 1.5;
+  
   font-size: 1.5rem;
   margin: 0;
   margin-bottom: 8px;
 `;
 
 const Contents = styled.p`
-  margin: 0;
-  font-family: "Helvetica", "Arial", sans-serif;
+  
   line-height: 1.5;
   font-size: 1rem;
 `;

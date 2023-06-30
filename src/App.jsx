@@ -1,7 +1,7 @@
 import TestPage from './components/TestPage';
 import './App.css';
 import styled  from 'styled-components';
-
+import GlobalStyle from './GlobalStyle';
 
 const StContainer = styled.div`
 display: flex;
@@ -49,9 +49,10 @@ function App() {
     //     return <StBox borderColor={box}>{getBoxName(box)}</StBox>
     //   })}
     // </StContainer>
-    <TestPage 
-    title="제목입니다"
-    contents="내용입니다"/>
+    <>
+    <GlobalStyle/ >
+    <TestPage  title="제목입니다" contents="내용입니다"/>
+    </>
   );
 }
 // props : 부모 컴-> 자식 컴에서 내려주는 데이터
